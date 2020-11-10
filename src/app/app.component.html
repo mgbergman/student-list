@@ -1,3 +1,5 @@
+
+<app-menu> </app-menu>
 <h1>List of Students</h1>
 
 <div>
@@ -12,7 +14,7 @@
 <th>Color</th>
 </tr>
 
-<tr *ngFor="let student of students" [hidden]="student.favColor=='orange'">
+<tr *ngFor="let student of students" [hidden]="student.favColor=='red'">
   <td>{{ student.name}}</td>
   <td>{{ student.favNumber}}</td>
   <td>{{ student.favColor}}</td>

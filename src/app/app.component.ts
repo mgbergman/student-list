@@ -7,19 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   btnStyle: string = "btn btn-primary";
-  students: any [] = [];
+  students: any[] = [];
   studentCollection: any[] = [
-    { name: "Tonya", favNumber: 743999, favColor: "orange"},
-    { name: "Kalil", favNumber: 743999, favColor: "orange"},
-    { name: "Marc", favNumber: 743999, favColor: "orange"},
-    { name: "Tina", favNumber: 743999, favColor: "orange"},
-    { name: "Bruce", favNumber: 743999, favColor: "orange"},
-    { name: "Oliver", favNumber: 743999, favColor: "orange"},
-    { name: "Zoe", favNumber: 743999, favColor: "orange"},
+    { name: "Tonya", favNumber: 743999, favColor: "orange" },
+    { name: "Kalil", favNumber: 743999, favColor: "orange" },
+    { name: "Marc", favNumber: 743999, favColor: "orange" },
+    { name: "Tina", favNumber: 743999, favColor: "orange" },
+    { name: "Bruce", favNumber: 743999, favColor: "orange" },
+    { name: "Oliver", favNumber: 743999, favColor: "orange" },
+    { name: "Zoe", favNumber: 743999, favColor: "orange" },
   ];
   title = 'student-list';
 
-  changeColor(): void{
+  changeColor(): void {
     this.btnStyle = "btn btn-lg";
 
   }
@@ -27,6 +27,6 @@ export class AppComponent {
   getStudents(): void {
 
     this.students = this.studentCollection;
-  
+
   }
 }

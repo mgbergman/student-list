@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  btnStyle: string = "btn btn-primary";
   students: any [] = [];
   studentCollection: any[] = [
     { name: "Tonya", favNumber: 743999, favColor: "orange"},
@@ -17,6 +18,11 @@ export class AppComponent {
     { name: "Zoe", favNumber: 743999, favColor: "orange"},
   ];
   title = 'student-list';
+
+  changeColor(): void{
+    this.btnStyle = "btn btn-lg";
+
+  }
 
   getStudents(): void {
 
